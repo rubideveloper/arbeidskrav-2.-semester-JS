@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arbeidskrav 2.semester JS</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <!-- Velkomstmelding -->
+    <div class="welcome-container">
+      <div class="welcome-content">
+        <span class="close-btn">X</span>
+        <p class="welcome-header">
+          Hei og velkommen til
+          <span class="brand">NETTMAT</span>
+        </p>
+
+        <p>
+          På denne siden kan du legge til ønsket vare. Vi har alle slags
+          matvarer som finnes, så du kan skrive inn det du vil. <br />
+          Siden vi er så generøse her i <span class="brand">NETTMAT</span> kan
+          du også legge inn prisen du har råd til å betale. Totalsummen vil bli
+          regnet ut. <br />
+          <br />
+          Når du har lagt inn det du ønsker og vil betale, trykker du bare på
+          betalknappen og kjøpet blir fullført. <br />
+        </p>
+        <br />
+        <p class="brand-end">
+          Ha en riktig god og enkel handel hos oss i
+          <span class="brand">NETTMAT</span>
+        </p>
+      </div>
+    </div>
+
+    <header>
+      <nav>
+        <div class="company-logo-container">
+          <img id="small-logo" src="./Assets/NettMat-1.png" alt="logo" />
+        </div>
+
+        <!-- Navlinker -->
+        <div>
+          <ul class="nav-links">
+            <li><a href="#">Hjem</a></li>
+            <li><a href="#">Om oss</a></li>
+            <li><a href="#">Kontakt oss</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Handleisten -->
+    <main>
+      <div class="shopping-list-container">
+        <h1>Din handlekurv</h1>
+
+        <div class="product-price-container">
+          <div class="product-container">
+            <label for="productInput">Skriv inn produkt:</label>
+            <input
+              type="text"
+              name="productInput"
+              id="productInput"
+              placeholder="F.eks: Melk"
+            />
+          </div>
+
+          <div class="price-container">
+            <label for="priceInput">Legg til pris:</label>
+            <input
+              type="number"
+              name="priceInput"
+              id="priceInput"
+              placeholder="F.eks: 19"
+            />
+          </div>
+        </div>
+
+        <div class="addbtn-container">
+          <button id="productSubmit" class="addBtn">Legg til</button>
+        </div>
+
+        <div class="productlist-container">
+          <ul id="productList"></ul>
+        </div>
+
+        <div class="sumOutput">
+          <p>Totalsum: <span id="sumOutput"> </span></p>
+          <button id="paySubmit" class="payBtn">Betal</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

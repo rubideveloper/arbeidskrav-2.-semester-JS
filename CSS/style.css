@@ -1,0 +1,221 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* VELKOMSTMELDING */
+.welcome-container {
+  display: none;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.welcome-content {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.welcome-header {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.brand {
+  font-weight: bold;
+  color: #045e25;
+}
+
+.brand-end {
+  text-align: center;
+}
+
+.close-btn {
+  color: #009f39;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* VELKOMSTMELDING END */
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to left, #009f39, #88d6a4);
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#small-logo {
+  width: 50px;
+}
+
+/* Elementet vil ikke vises under bredde 800px */
+@media only screen and (max-width: 800px) {
+  nav input {
+    display: none;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links,
+a {
+  font-size: 16px;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Elementet vil ikke vises under en bredde på 550px */
+@media only screen and (max-width: 550px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.nav-links a:hover {
+  color: lightgray;
+}
+/* NAVBAR END */
+
+/* SHOPPINGLIST */
+.shopping-list-container {
+  background-color: #009f39;
+  margin: auto;
+  margin-top: 10%;
+  box-shadow: 2px 4px 8px gray;
+  border-radius: 4px;
+  width: 750px;
+}
+
+h1 {
+  padding-top: 5%;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.product-price-container {
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  gap: 30px;
+}
+
+#priceInput,
+#productInput {
+  border: none;
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.addbtn-container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addBtn {
+  background-color: white;
+  color: #009f39;
+  font-size: 20px;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background-color: #045e25;
+  color: white;
+}
+
+#productList {
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+li {
+  padding: 3px;
+  font-size: 20px;
+  color: white;
+  list-style: none;
+}
+
+.removeBtn {
+  margin-left: 10px;
+  color: #009f39;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.removeBtn:hover {
+  background-color: #045e25;
+  color: white;
+}
+
+.sumOutput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-top: 2px solid white;
+}
+
+.sumOutput p {
+  font-size: 25px;
+  color: white;
+}
+
+.payBtn {
+  background-color: white;
+  color: #009f39;
+  font-size: 20px;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.payBtn:hover {
+  background-color: #045e25;
+  color: white;
+}
